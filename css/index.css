@@ -3,6 +3,12 @@ body {
     color: #311E10;
     font-family: "Avenir Next", Calibri, Verdana, sans-serif;  
 }
+header{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #89CE94;
+}
 
 h1 {
     text-align:center;
@@ -17,6 +23,17 @@ h2 {
     color: #307473; 
 }
 
+nav ul {
+    display: flex;
+    list-style-type:none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+nav ul li {
+    padding-left: 20px;
+}
+
 section {
     margin-top : 20px;
     margin-left : 40px;
@@ -24,16 +41,17 @@ section {
     padding-right:10px;
 }
 
-#experience li { 
-    background-color: #89CE94;
-    list-style-type: none;
-    border-radius: 10px;
-    padding: 10px;
+#about{
+    padding-top: 120px;
 }
 
-#education li {
-    list-style-type: none;
-    padding: 10px;
+#experience li { 
+    background-color: #89CE94;
+    border-radius: 10px;
+}
+
+#experience div {
+    display: flex;
 }
 
 #skills-list li {
@@ -62,14 +80,14 @@ section {
 }
 
 #leave_message input, 
-textarea {
+#leave_message textarea {
     margin-top: 4px;
     margin-bottom: 15px;
     border: 2px solid #F194B4;
     padding: 10px;
 }
 #leave_message input:focus,
-textarea:focus {
+#leave_message textarea:focus {
     outline: 1.5px solid #F194B4;
     border-radius: 1.5px;
 }
@@ -78,6 +96,8 @@ form {
     background-color: papayawhip;
     border: 2px solid steelblue;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -99,10 +119,6 @@ textarea {
     padding: 8px;
     border: 4px seashell solid;
     font-family: "Avenir Next", Calibri, Verdana, sans-serif;  
-}
-
-.navigation-list {
-    margin-left:40px;
 }
 
 button {

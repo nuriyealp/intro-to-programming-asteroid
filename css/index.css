@@ -1,33 +1,41 @@
+html { 
+    scroll-padding-top: 170px;
+}
+
 body {
     background-color: #89CE94;
     color: #311E10;
-    font-family: "Avenir Next", Calibri, Verdana, sans-serif;  
+    font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+    margin: 0 24px;
 }
-header{
+
+header { 
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #89CE94;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 h1 {
-    text-align:center;
+    text-align: center;
     font-size: 26px;
     font-weight: bold;
     color: #12664F;
 }
 
 h2 {
-    font-size: 26px;  
+    font-size: 26px;
     font-weight: bold;
-    color: #307473; 
+    color: #307473;
 }
 
 nav ul {
     display: flex;
-    list-style-type:none;
+    list-style-type: none;
     justify-content: center;
     padding-left: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -35,17 +43,15 @@ nav ul li {
 }
 
 section {
-    margin-top : 20px;
-    margin-left : 40px;
+    margin-top: 20px;
     padding-bottom: 30px;
-    padding-right:10px;
 }
 
-#about{
+#about {
     padding-top: 120px;
 }
 
-#experience li { 
+#experience li {
     background-color: #89CE94;
     border-radius: 10px;
 }
@@ -65,27 +71,28 @@ section {
     font-size: 20px;
 }
 
-.messages-list li{
+.messages-list li {
     border: 2px solid #820263;
 }
 
-#connect p{
+#connect p {
     margin: 1px;
     font-size: 20px;
 }
 
-#leave_message label{
+#leave_message label {
     font-size: 20px;
     color: #89CE94;
 }
 
-#leave_message input, 
+#leave_message input,
 #leave_message textarea {
     margin-top: 4px;
     margin-bottom: 15px;
     border: 2px solid #F194B4;
     padding: 10px;
 }
+
 #leave_message input:focus,
 #leave_message textarea:focus {
     outline: 1.5px solid #F194B4;
@@ -118,7 +125,7 @@ textarea {
     font-size: 18px;
     padding: 8px;
     border: 4px seashell solid;
-    font-family: "Avenir Next", Calibri, Verdana, sans-serif;  
+    font-family: "Avenir Next", Calibri, Verdana, sans-serif;
 }
 
 button {
@@ -131,8 +138,8 @@ button {
 
 footer {
     background-color: #F194B4;
-    text-align:center;
-    padding:1px;
+    text-align: center;
+    padding: 1px;
 }
 
 @media only screen and (max-width: 600px) {

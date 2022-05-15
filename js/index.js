@@ -39,23 +39,17 @@ messageForm.addEventListener('submit', (event) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-
-    messageForm.reset()
+    messageForm.reset();
 });
 
-
-let githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/nuriyealp/repos");
-githubRequest.send();
-githubRequest.addEventListener("load", () => {
-    var response = githubRequest.responseText;
-    let repositories = JSON.parse(response);
-    console.log(repositories)
+fetch('https://api.github.com/users/nuriyealp/repos')
+  .then(response => response.json())
+  .then(load => {
     const projectSection = document.getElementById("projects");
     const projectList= projectSection.querySelector("ul");
-    for (let i = 0; i < repositories.length; i++) {
-        const project = document.createElement("li")
-        project.innerText = repositories[i].name;
+    for (let i = 0; i < load.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = load[i].name;
         projectList.appendChild(project);
-    }
-});
+    }   
+  })

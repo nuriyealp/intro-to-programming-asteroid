@@ -8,27 +8,36 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-   <h1> Nuriye Alp</h1>
-    <ul class="navigation-list">
-        <li>About</li>
-        <li>Experience</li>
-        <li>Connect</li>
-    </ul>
-    <section>
+    <header>
+        <h1> Nuriye Alp</h1>
+        <nav> 
+            <ul class="navigation-list">
+                <a href="#about"><li>About</li></a>
+                <a href="#experience"><li>Experience</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#connect"><li>Connect</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
         <h2>About</h2>
         <p>I am Nuriye. I am a software engineer and a teacher. I am from Turkey. I am married and I have two daughters.</p>
     </section>
-    <section class="experience-list">
-       <h2>Experience</h2>
-        <p>Software Engineer</p>
-        <ul>
-            <li>Portfolio project</li>
-            <li>Udemy course project</li>
-        </ul>
-        <p>Teacher</p>
-        <ul>
-            <li>Learn and Play Montessori School</li>
-        </ul>
+    <section id="experience" class="experience-list">
+        <h2>Experience</h2>
+        <div>
+            <p>Software Engineer</p>
+            <ul>
+                <li>Portfolio project</li>
+                <li>Udemy course project</li>
+            </ul>
+        </div>
+        <div>
+            <p>Teacher</p>
+            <ul>
+                <li>Learn and Play Montessori School</li>
+            </ul>
+        </div>
     </section>
     <section id="skills">
         <h2>Skills</h2>
@@ -36,6 +45,7 @@
             
         </ul>
     </section>
+  
     <section id="projects">
         <h2>Projects</h2>
         <ul>
@@ -43,6 +53,8 @@
         </ul>
     </section>
     <section>
+
+    <section id="connect">
         <h2>Connect</h2>
         <ul>
             <li><a href="https://www.linkedin.com/in/nuriye/" target="_blank">Linkedin</a></li>
@@ -54,17 +66,11 @@
         <h2>Leave a Message</h2>
         <form name="leave_message">
             <label for="name">Name</label>
-            <br>
             <input type="text" name="name" required="true">
-            <br>
             <label for="email">Email</label>
-            <br>
             <input type="email" name="email" required="true">
-            <br>
             <label for="message">Message</label>
-            <br>
             <textarea name="message" required="true"></textarea>
-            <br>
             <button type="submit">Submit</button>
         </form>
     </section>

@@ -75,11 +75,6 @@ section {
     border: 2px solid #820263;
 }
 
-#connect p {
-    margin: 1px;
-    font-size: 20px;
-}
-
 #leave_message label {
     font-size: 20px;
     color: #89CE94;
@@ -140,6 +135,14 @@ footer {
     background-color: #F194B4;
     text-align: center;
     padding: 1px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 @media only screen and (max-width: 600px) {

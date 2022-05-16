@@ -2,7 +2,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML = `Nuriye ${thisYear}`;
+copyright.innerHTML = `&copy; Nuriye ${thisYear}`;
 footer.appendChild(copyright);
 
 const skills = ['HTML','CSS','JavaScript','Git','GitHub'];
